@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fontes.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>    
+    <title>RPG Mario</title>
+</head>
+
+<body>
+    <div>
+        <header class="container-header">
+            <img class="img-logo" src="./images/projetoMario.jpg" alt="">
+            <a href="https://fontmeme.com/pt/fonte-de-super-mario/"><img
+                    src="https://fontmeme.com/permalink/210815/6ff25762042fc96057a0d9ba88cc676e.png"
+                    alt="fonte-de-super-mario" border="0"></a>
+
+        </header>
+        <div class="nav-jogo" style="display: flex;justify-content: center; align-items: center;">             
+            <button class="btn btn-mario" onclick="cadastrar()"> cadastrar</button>
+            <button class="btn btn-luigi" onclick="iniciar()"> Iniciar</button>
+        </div>        
+        <div class="container-flow">
+            
+            <div class="card">
+                <img class="img-card" src="./images/Luigi-1-escolha.png" alt="Personagem Luigi" srcset="">
+                <h3>Luigi</h3>
+                <button  id="btn-3" class="btn btn-luigi btn-jg" onclick="escolheJogador(1)"> Escolher</button>
+            </div>
+            <div class="card">
+                <img class="img-card" src="./images/mario-escolha.jpg" alt="Personagem Mario" srcset="">
+                <h3>Mario Bros</h3>
+                <button id="btn-2"  class="btn btn-mario btn-jg"  onclick="escolheJogador(2)"> Escolher</button>
+            </div>
+            <div class="card">
+                <img class="img-card" src="./images/princesa-escolha.jpg" alt="Personagem Peachette" srcset="">
+                <h3>Princesa Peachette</h3>
+                <button id="btn-1" class="btn btn-princesa btn-jg" onclick="escolheJogador(3)"> Escolher</button>
+            </div>
+
+            <div class="card">
+                <img style="margin-top: 30px;" class="img-card" src="./images/verde.jpg" alt="Quadradinho verde" srcset="">                
+                <button  class="btn btn-luigi btn-jg" > 01</button>
+            </div>
+            <div class="card">
+                <img style="margin-top: 30px;" class="img-card" src="./images/amarelo.jpg" alt="Quadradinho amarelo" srcset="">                
+                <button  class="btn btn-amarelo btn-jg"  > 02</button>
+            </div>
+            <div class="card">
+                <img style="margin-top: 30px;" class="img-card" src="./images/vermelho.jpg" alt="Quadradinho Vermelho" srcset="">                
+                <button  class="btn btn-princesa btn-jg" > 03</button>
+            </div>            
+        </div>
+        <div class="rodape" style="height: 20px;">            
+        </div>
+    </div>
+</body>
+
+</html>
