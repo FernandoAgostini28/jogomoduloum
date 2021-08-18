@@ -1,15 +1,15 @@
 
 // buscar elementopara ativar botão
-//var buttonb = document.querySelectorAll(".btn-jg");
-//console.log(buttonb)
-//buttonb.disabled = false;
+
 
 /// variavel  para salvar o login
-var btn1 = window.document.getElementById("#btn-1");
+var btn1 = document.getElementById("btn-1");
+btn1.disabled = true;
 var btn2 = document.getElementById("btn-2");
+btn2.disabled = true;
 var btn3 = document.getElementById("btn-3");
+btn3.disabled = true;
 
-console.log(btn1)
 var escolhaJogador;
 var email = "";
 var confEmail = '';
@@ -34,14 +34,19 @@ function cadastrar() {
 // inicia o jogo se o email for correto ok
 
 function iniciar() {
-    var button = document.querySelector(".btn-jogadores");
-    confEmail = prompt("confirme seu email:")
+    
+    btn1.disabled = false;
+    btn2.disabled = false;
+    btn3.disabled = false;
+            console.log("disable", btn1.disabled)
+    confEmail = prompt("confirme seu email:");
     var contador = 3
     while (email !== confEmail && contador > 0) {
         alert(`Voce digitou o email incorreto: voce tem ${contador--} tentaivas`)
         confEmail = prompt("confirme seu email:")
 
         if (email === confEmail) {
+            
             //buttonb.disabled = false;
             escolheJogador()
         }
